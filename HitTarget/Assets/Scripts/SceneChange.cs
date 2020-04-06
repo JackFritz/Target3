@@ -44,4 +44,9 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("Story5");// More Story
     }
+
+    public void MainMenu()// Press Back Button or Main Menu Button
+    {
+        SceneManager.LoadScene("MainMenu");// To the menu
+    }
 }
