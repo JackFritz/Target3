@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Score : MonoBehaviour
+public class QuickDescentScore : MonoBehaviour
 {
     public static int scoreAmount;
     private Text scoreText;
@@ -20,10 +20,5 @@ public class Score : MonoBehaviour
     void Update()
     {
         scoreText.text = "Score: " + scoreAmount;
-
-        //if (scoreAmount == 7)
-        //{
-        //    SceneManager.LoadScene("Credits");
-        //}
     }
 }

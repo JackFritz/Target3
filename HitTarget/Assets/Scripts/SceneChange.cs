@@ -17,7 +17,7 @@ public class SceneChange : MonoBehaviour
 
     public void StartGame()// Press Start button
     {
-        SceneManager.LoadScene("Level1");// We might only make 1 level, but I am gonna call it level 1
+        SceneManager.LoadScene("LevelSelect");// Load level select
     }
 
     public void StoryTime()// Press Story button
@@ -48,5 +48,14 @@ public class SceneChange : MonoBehaviour
     public void MainMenu()// Press Back Button or Main Menu Button
     {
         SceneManager.LoadScene("MainMenu");// To the menu
+    }
+
+    public void Practice()// Press practice level picture
+    {
+        SceneManager.LoadScene("LevelTest");// Loads practice level
+    }
+    public void QuickDescent()// Press Back Button or Main Menu Button
+    {
+        SceneManager.LoadScene("QuickDescent");// Load level quick descent
     }
 }
