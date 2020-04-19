@@ -6,7 +6,7 @@ public class TargetBreak : MonoBehaviour
 {
 
     public Animator animator;
-
+    public AudioSource Melee;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +34,7 @@ public class TargetBreak : MonoBehaviour
             animator.SetBool("Hit", true);
             yield return new WaitForSeconds(.3f);
                    Destroy(gameObject);
+                   Melee.Play(); //plays the sound insterted in the melee slot
                    Score.scoreAmount += 1;
 
         }
