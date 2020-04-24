@@ -54,8 +54,12 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("LevelTest");// Loads practice level
     }
-    public void QuickDescent()// Press Back Button or Main Menu Button
+    public void QuickDescent()// Press picture of vertical level
     {
         SceneManager.LoadScene("QuickDescent");// Load level quick descent
+    }
+    public void DontFall()// Press picture of spike level
+    {
+        SceneManager.LoadScene("DontFall");// Load level don't fall... seriously
     }
 }
