@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovingPlat1 : MonoBehaviour
 {
-    float speed = -0.5f;
+    float speed = -0.3f;
    
     // Update is called once per frame
     void Update()
