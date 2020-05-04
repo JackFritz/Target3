@@ -25,6 +25,7 @@ public class TargetBreak : MonoBehaviour
       if (collision.gameObject.name == "AttackBlock")
        {
             StartCoroutine(TargetHitSequence());
+            Melee.Play(); //plays the sound insterted in the melee slot
 
         }
 
@@ -34,7 +35,7 @@ public class TargetBreak : MonoBehaviour
             animator.SetBool("Hit", true);
             yield return new WaitForSeconds(.3f);
                    Destroy(gameObject);
-                   Melee.Play(); //plays the sound insterted in the melee slot
+                 
                    Score.scoreAmount += 1;
 
         }

@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (collision.gameObject.tag == "win")// if colides with the door
         {
-            SceneManager.LoadScene("MainMenu");// load win scene, currently goes to main menu
+            SceneManager.LoadScene("WinScreen");// load win scene
         }
     }
 }

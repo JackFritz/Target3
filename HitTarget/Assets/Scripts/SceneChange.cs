@@ -62,4 +62,9 @@ public class SceneChange : MonoBehaviour
     {
         SceneManager.LoadScene("DontFall");// Load level don't fall... seriously
     }
+
+    public void WinScreen() //press back button
+    {
+        SceneManager.LoadScene("WinScreen");//Load win screen... and that's all she wrote
+    }
 }
